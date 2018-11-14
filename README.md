@@ -1,2 +1,1 @@
-# basicReactJS
-Setup and create component
+# Setup and create component
