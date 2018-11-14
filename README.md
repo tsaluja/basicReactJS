@@ -1,61 +1,44 @@
-# Setup and create component
-## Setup:
-  1.	Create a new folder for application
-  2.	Open the terminal on the folder location
-  3.	Run: npx create-react-app appName
-  4.	Once the command is complete with the setup, run
-      cd appName
-      npm install redux react-redux –save
-      npm start
-  5.	This will now open the application in the browser
-      http://localhost:3000/
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Including Bootstrap:
-  1.	Open index.html under public folder
-  2.	Goto to bootstrap site add copy the code to include bootstrap css.
-  3.	Paste the code inside index.html
-  4.	You can delete the src folder to clean up the code
+## Available Scripts
 
-## Creating Components:
-  1.	Create new src folder
-  2.	Under this folder, create index.js file
-      import React from 'react';
-      import ReactDOM from 'react-dom';
+In the project directory, you can run:
 
-      ReactDOM.render(
-          <div>Reminder Pro</div>, document.getElementById('root')
-      )
-  3.	Create a folder “components” inside “src”
-  4.	Create new file “App.jsx” inside “components”
-      
-      import React, {Component} from 'react';
+### `npm start`
 
-      class App extends Component {
-          render(){
-              return(
-                  //HTML will come here
-              )
-          }
-      }
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-      export default App;
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-## Calling component in HTML:
-  1.	Open index.js under public folder
-  2.	Import App Component created here
-      import React from 'react';
-      import ReactDOM from 'react-dom';
-      import App from ‘./components/App’;
-  3.	Replace the existing code:
-      
-      ReactDOM.render(
-          <div>Reminder Pro</div>, document.getElementById('root')
-      )
-      With:
-      ReactDOM.render(
-          <App/>, document.getElementById('root')
-      )
-      
-> Here, App is the class we created under App.jsx file.
+### `npm test`
 
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
