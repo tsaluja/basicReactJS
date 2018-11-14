@@ -27,6 +27,7 @@
       )
   3.	Create a folder “components” inside “src”
   4.	Create new file “App.jsx” inside “components”
+      
       import React, {Component} from 'react';
 
       class App extends Component {
@@ -46,6 +47,7 @@
       import ReactDOM from 'react-dom';
       import App from ‘./components/App’;
   3.	Replace the existing code:
+      
       ReactDOM.render(
           <div>Reminder Pro</div>, document.getElementById('root')
       )
@@ -53,6 +55,7 @@
       ReactDOM.render(
           <App/>, document.getElementById('root')
       )
+      
 > Here, App is the class we created under App.jsx file.
 
 
